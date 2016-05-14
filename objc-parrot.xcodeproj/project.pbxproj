@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4306ED0B1CE79D9C0088043F /* objc-parrot in Resources */ = {isa = PBXBuildFile; fileRef = 4306ED0A1CE79D9C0088043F /* objc-parrot */; };
 		45DB2D28C27BB74E7FA5B97E /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F927DDE00B36AA7CBF212C8 /* FISAppDelegate.m */; };
 		83335579EB0C3F2B69950D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12ABF9789DECDEFAA9F788DC /* Images.xcassets */; };
 		A376ECC17190793C7A3F9A33 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6B4054F99C0AF7060910F0E8 /* LaunchScreen.xib */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		036764AAA6875CBE80FEDF74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		12ABF9789DECDEFAA9F788DC /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4306ED0A1CE79D9C0088043F /* objc-parrot */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "objc-parrot"; sourceTree = "<group>"; };
 		648A6D4D1CD44C759A1982DF /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		650FFE5029538A0120BB9BCF /* objc-parrot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "objc-parrot-Info.plist"; sourceTree = "<group>"; };
 		6B4054F99C0AF7060910F0E8 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				E8EA224E5D3336EBB2315CFF /* FISAppDelegate.h */,
 				9F927DDE00B36AA7CBF212C8 /* FISAppDelegate.m */,
+				4306ED0A1CE79D9C0088043F /* objc-parrot */,
 				648A6D4D1CD44C759A1982DF /* Main.storyboard */,
 				758EB24B887E32E24927715C /* Resources */,
 			);
@@ -175,6 +178,11 @@
 				CLASSPREFIX = FIS;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "The Flatiron School";
+				TargetAttributes = {
+					E2FAEAB3754461B7EC7EFF3F = {
+						DevelopmentTeam = YX6E9KFC93;
+					};
+				};
 			};
 			buildConfigurationList = 898C08B4C35691CA925C8034 /* Build configuration list for PBXProject "objc-parrot" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -201,6 +209,7 @@
 			files = (
 				83335579EB0C3F2B69950D76 /* Images.xcassets in Resources */,
 				C13B59B6656C7B5BE2410AD3 /* Main.storyboard in Resources */,
+				4306ED0B1CE79D9C0088043F /* objc-parrot in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -295,6 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -407,6 +419,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -424,6 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
